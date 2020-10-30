@@ -1,0 +1,1 @@
+These are the files needed to build my digital portfolio. This will be my first site fully designed and built by myself.
