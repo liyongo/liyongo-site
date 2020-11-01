@@ -13,7 +13,6 @@ body{
 	background-color: white;
 	text-align: left;
 	min-height: 100vh;
-	max-width: 100%;
 	width: 768px;
 	z-index: 2;
 	cursor: crosshair;
@@ -38,8 +37,6 @@ body{
 	align-items: flex-end;
 }
 main{
-	max-height: 100vh;
-	width: 100%;
 	position: absolute;
 	top: 10em;
 }
@@ -189,4 +186,46 @@ img{
 	padding: 0 1em 0 0;
 	max-height: 512px;
  	height: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+	main{
+		position: absolute;
+		top: 2.5em;
+		max-width: 99vw;
+		background-position: center;
+	}
+	body{
+		position: absolute;
+		left: 0;
+	}
+	h1{
+		font-size: 7em;
+	}
+	h2{
+		font-size: 5.5em;
+	}
+	small{
+		font-size: 2em;
+	}
+	.slideshow{
+		display: flex;
+		height: 220px;
+		width: 100vw;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		padding: 1em 0 1em 0;
+}
+	.slideshow img{
+		padding: 0 1em 0 0;
+ 		height: 100%;
+		width: 100;
+}
+	.home-link{
+		position: fixed;
+		top: 1em;
+		left: calc(50% - 94px/2 + 1px);
+	}
 }
