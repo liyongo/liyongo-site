@@ -14,7 +14,7 @@ body{
 	text-align: left;
 	min-height: 100vh;
 	max-width: 100%;
-	width: 100%;
+	width: 768px;
 	z-index: 2;
 	cursor: crosshair;
 	background: #fff;
