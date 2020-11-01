@@ -75,7 +75,6 @@ html {
 /* TEXT STYLING */
 
 p{
-	width: 768px;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 48px;
@@ -86,7 +85,6 @@ p{
 }
 
 h1{
-	width: 768px;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 200px;
@@ -99,7 +97,6 @@ h1{
 	text-rendering: optimizeLegibility;
 }
 h2{
-	width: 768px;
 	font-style: normal;
 	font-weight: 700;
 	padding: 0;
@@ -112,7 +109,6 @@ h2{
 	text-rendering: optimizeLegibility;
 }
 small{
-	width: 768px;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 48px;
