@@ -156,12 +156,9 @@ img{
 .landing-button{
 	position: fixed;
 	bottom: 20px;
-	width: 768px;
-	font-style: normal;
-	font-weight: 700;
+	width: 786px;
 	font-size: 180px;
-	line-height: 220px;
-	letter-spacing: -0.09em;
+	word-break: normal;
 }
 
 /* 
@@ -228,4 +225,10 @@ img{
 		top: 1em;
 		left: calc(50% - 94px/2 + 1px);
 	}
+	.landing-button{
+		position: fixed;
+		bottom: 20px;
+		font-size: 24.6vw;
+		word-break: normal;
+}
 }
