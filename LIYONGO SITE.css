@@ -16,7 +16,6 @@ body{
 	width: 768px;
 	z-index: 2;
 	cursor: crosshair;
-	background: #fff;
 	clear: both;
     overflow-y: auto;
 	overflow-x: hidden;
@@ -31,10 +30,10 @@ body{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	
-	-webkit-align-items: flex-end;
-	-moz-align-items: flex-end;
-	-ms-align-items: flex-end;
-	align-items: flex-end;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
 }
 main{
 	position: absolute;
