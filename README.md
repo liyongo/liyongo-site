@@ -1,1 +1,1 @@
-These are the files needed to build my digital portfolio. This will be my first site fully designed and built by myself.
+These are the HTML/CSS files used to build the current design of liyongo.com as of 12/01/2020. If you have any questions or concerns, please email demeliyongo@gmail.com.

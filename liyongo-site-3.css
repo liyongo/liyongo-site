@@ -1,0 +1,547 @@
+@charset "UTF-8";
+@import url('https://use.typekit.net/pbo3wok.css');
+	 /* CSS Document */
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "futura-pt", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: black;
+	background-color: white;
+	text-align: left;
+	min-height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	cursor: crosshair;
+	clear: both;
+    overflow-y: auto;
+	overflow-x: hidden;
+
+	transition: .3s linear;
+}
+main{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	transition: .3s ease-in-out;
+}
+
+div {
+	-moz-flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	flex: 1 0 auto;
+	width: 100%;
+    height: inherit;
+}
+
+html {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* make scrollbar transparent */
+}
+
+::-moz-selection {
+	background-color: #000;
+	color: #fff;
+}
+::selection {
+	background-color: #000;
+	color: #fff;
+}
+
+/* TEXT STYLING */
+h1 {
+	font-family: "futura-pt", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 36px;
+}
+h2 {
+	font-family: "futura-pt", "Helvetica", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 33px;
+}
+h3 {
+	font-family: "futura-pt", "Helvetica", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 22px;
+}
+h6 {
+	font-family: "futura-pt", "Helvetica", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+}
+
+p {
+	font-family: "futura-pt", "Helvetica", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+	cursor: cell;
+}
+
+label{
+	cursor: cell;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* Header */
+.header{
+	display: block;
+	position: fixed;
+	top: 0;
+	height: 2.77em;
+	width: 100vw;
+	border-bottom: solid;
+	border-bottom-width: .22em;
+	z-index: 97;
+	background-color: white;
+}
+
+.header-text{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	align-items: center;
+	padding-left: 1em;
+	z-index: 98;
+}
+
+/* Menu */
+/* Menu Open Button */
+.cross{
+	background-color: black;
+	width: 1.5em;
+	height: .22em;
+	transform: rotate(90deg);
+}
+.cross::after {
+	content: "";
+	background-color: black;
+	position: fixed;
+	left: 0;
+	width: 1.5em;
+	height: .22em;
+	transform: rotate(90deg);
+}
+input#menu {
+	display: none;
+}
+input#menu:checked + label {
+	transform: rotate(45deg);
+
+	transition: .3s ease-in-out;
+}
+input#menu:not(:checked) + label {
+	transition: .3s ease-in-out;
+}
+
+/* Menus */
+.main-menu label {
+	max-width: 2.5em;
+	max-height: 2.5em;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-right: 5%;
+	cursor: cell;
+	display: block;
+	align-self: flex-end;
+}
+
+.main-menu ul {
+	list-style-type: none;
+}
+
+.main-menu li {
+	display: block;
+	align-items: center;
+	background-color: #fff;
+	width: auto;
+	max-height: 2.5em;
+	padding: .2em 1em;
+	margin: -.22em;
+	border: solid;
+	border-width: .22em;
+}
+
+/* Main Menu */
+.main-menu{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column-reverse;
+	position: fixed;
+	top: 0;
+	right: 0;
+	max-height: auto;
+	width: auto;
+	z-index: 96;
+	margin-top: 2.51em;
+	border: none;
+}
+#fash-button{
+	padding-top: .22em;
+}
+.menu-content {
+	max-height: 0;
+	overflow: hidden;
+	border: solid;
+	border-width: .22em;
+
+	transition: max-height .8s ease-in-out;
+}
+
+#menu:checked ~ .menu-content {
+	max-height: 1000px;
+}
+/* Submenu */
+.submenu {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	right: 100%;
+	margin-top: -2em;
+	display: none;
+	height: 100%;
+	max-width: auto;
+
+	transition: all 0.5s ease;
+}
+
+.submenu li {
+	max-height: 100%;
+	white-space: nowrap;
+}
+
+ul li:hover > ul,
+ul li ul:hover{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li {
+	clear: both;
+	width: 100%;
+  }
+
+/* Info */
+/* Button Div */
+.button-box{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 2.5em;
+	grid-template-areas: 
+	"button1 button2 button3"
+	"button4 button6 button5"
+	"text-area text-area text-area";
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 75vw;
+	max-height: 75vh;
+	transform: translate(-50%, -50%);
+}
+
+.button-box input{
+	display: none;
+}
+
+/* Buttons */
+.button-box label{
+	border: solid;
+	border-width: .22em;
+	text-align: center;
+	padding: .2em 1em;
+	height: 2em;
+
+	transition: .5s ease-in-out;
+}
+
+label h3 {
+	margin: auto;
+	align-self: center;
+	white-space: nowrap;
+}
+#call-label {
+	grid-area: button2;
+	display: none; /* Until I decide everyone needs this numbers */
+}
+#email-label {
+	grid-area: button1;
+}
+#soc-label {
+	grid-area: button3;
+}
+#priv-label {
+	grid-area: button4;
+}
+#leg-label {
+grid-area: button5;
+}
+#acc-label {
+	grid-area: button6
+}
+/* Button Toggles */
+.button-text {
+	grid-area: text-area;
+	color: black;
+	opacity: 0;
+	max-height: 4em;
+
+	transition: .3s ease-in-out;
+}
+
+input#priv:checked ~ #priv-text {
+	opacity: 1;
+
+	transition: .8s ease-in-out;
+}
+input#priv:checked ~ #priv-label {
+	border-color: white;
+
+	transition: .3s ease-in-out;
+}
+input#acc:checked ~ #acc-text {
+	opacity: 1;
+
+	transition: .8s ease-in-out;
+}
+input#acc:checked ~ #acc-label {
+	border-color: white;
+
+	transition: .3s ease-in-out;
+}
+input#leg:checked ~ #leg-text {
+	opacity: 1;
+
+	transition: .8s ease-in-out;
+}
+input#leg:checked ~ #leg-label {
+	border-color: white;
+
+	transition: .3s ease-in-out;
+}
+
+/* Galleries */
+.photo-gallery {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	justify-content: center;
+	padding-bottom: 3em;
+}
+
+.gal-col {
+	position: relative;
+	top: 2.5em;
+	right: .7em;
+	flex: 25%;
+	max-width: 30vw;
+	margin: 1em;
+}
+
+.gal-col img {
+	border: solid;
+	border-width: .22em;
+	padding: .5em;
+	margin: .25em 0;
+}
+
+.site-section{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 5em;
+	text-align: center;
+	overflow-y: scroll;
+}
+iframe {
+	height: 35em;
+	width: 56em;
+	border: solid;
+	border-width: .22em;
+	padding: .5em;
+	align-self: center;
+}
+
+.hello{
+	display: flex;
+	height: 100vh;
+	max-width: 80vw;
+}
+
+.hello p {
+	font-size: 36px;
+	font-weight: 500;
+	align-self: center;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 812px) {
+main { 
+	font-size: .5em;
+	height: 100vh;
+	overflow-y: scroll;
+}
+.button-box{
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+.button-box label{
+	border: solid;
+	border-width: .22em;
+	text-align: center;
+	padding: 1em 1em 2.5em 1em;
+	justify-self: center;
+
+	transition: .5s ease-in-out;
+}
+
+label h3 {
+	margin: auto;
+	align-self: center;
+	white-space: nowrap;
+}
+.submenu {
+	max-width: 50vw;
+}
+.submenu li {
+	white-space: normal;
+}
+li {
+	max-width: 50vw;
+}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #222222;
+		color: #F5f5f5;
+	}
+	.header {
+		background-color: #222222;
+		color: #F5f5f5;
+	}
+	body {
+		background-color: #222222;
+		color: #F5f5f5;
+	}
+	a {
+		background-color: #222222;
+		color: #F5f5f5;
+	}
+	li {
+		background-color: #222222 !important;
+		color: #F5f5f5;
+	}
+	.cross {
+		background-color: #F5f5f5;
+	}
+	.cross::after {
+		background-color: #F5f5f5;
+	}
+	img {
+		opacity: .75;
+	}
+	img:hover {
+		opacity: 1;
+
+		transition: .3s ease-in;
+	}
+	iframe {
+		opacity: .75;
+	}
+	iframe:hover {
+		opacity: 1;
+
+		transition: .3s ease-in;
+	}
+	input#priv:checked ~ #priv-label {
+		border-color: #222222;
+	
+		transition: .3s ease-in-out;
+	}
+	input#acc:checked ~ #acc-text {
+		opacity: 1;
+		color: #f5f5f5;
+	
+		transition: .8s ease-in-out;
+	}
+	input#acc:checked ~ #acc-label {
+		border-color: #222222;
+	
+		transition: .3s ease-in-out;
+	}
+	input#leg:checked ~ #leg-label {
+		border-color: #222222;
+	
+		transition: .3s ease-in-out;
+	}
+	input#priv:checked ~ #priv-text {
+		opacity: 1;
+		color: #f5f5f5;
+	
+		transition: .8s ease-in-out;
+	}
+	input#leg:checked ~ #leg-text {
+		opacity: 1;
+		color: #f5f5f5;
+	
+		transition: .8s ease-in-out;
+	}
+	::-moz-selection {
+		background-color: #F5F5F5;
+		color: #000000;
+	}
+	::selection {
+		background-color: #F5F5F5;
+		color: #000000;
+	}
+}
