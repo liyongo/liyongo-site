@@ -214,24 +214,27 @@ input#menu:not(:checked) + label {
 	max-height: auto;
 	width: auto;
 	z-index: 96;
-	margin-top: 2.51em;
+	margin-top: 2.77em;
 	border: none;
-}
-#fash-button{
-	padding-top: .22em;
 }
 .menu-content {
 	max-height: 0;
 	overflow: hidden;
 	border: solid;
 	border-width: .22em;
+	opacity: 0;
 
 	transition: max-height .8s ease-in-out;
 }
 
 #menu:checked ~ .menu-content {
 	max-height: 1000px;
+	opacity: 1;
 }
+#menu:not(:checked) ~ .menu-content {
+	transition: .8s ease-in-out;
+}
+
 /* Submenu */
 .submenu {
 	visibility: hidden;
@@ -289,10 +292,13 @@ ul li ul li {
 
 /* Buttons */
 .button-box label{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: solid;
 	border-width: .22em;
 	text-align: center;
-	padding: .2em 1em;
+	padding-left: 1em;
 	height: 2em;
 
 	transition: .5s ease-in-out;
@@ -305,7 +311,6 @@ label h3 {
 }
 #call-label {
 	grid-area: button2;
-	display: none; /* Until I decide everyone needs this numbers */
 }
 #email-label {
 	grid-area: button1;
@@ -370,16 +375,17 @@ input#leg:checked ~ #leg-label {
 	display: flex;
 
 	justify-content: center;
-	padding-bottom: 3em;
+	align-items: flex-start;
+
+	position: absolute;
+	top: 7vh;
+	left: 0;
 }
 
 .gal-col {
-	position: relative;
-	top: 2.5em;
-	right: .7em;
 	flex: 25%;
-	max-width: 30vw;
-	margin: 1em;
+	max-width: 28vw;
+	margin: 1.5em;
 }
 
 .gal-col img {
@@ -425,22 +431,51 @@ iframe {
 main { 
 	font-size: .5em;
 	height: 100vh;
-	overflow-y: scroll;
 }
 .button-box{
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+	grid-template-areas: 
+	"button1"
+	"button2"
+	"button3"
+	"button4"
+	"button6"
+	"button5"
+	"text-area";
+	position: fixed;
+	top: 60%;
+	left: 50%;
+	max-width: 75vw;
+	max-height: auto;
 	overflow-y: scroll;
+	transform: translate(-50%, -50%);
 }
 
+.button-box input{
+	display: none;
+}
+
+/* Buttons */
 .button-box label{
 	border: solid;
-	border-width: .22em;
+	border-width: .22rem;
 	text-align: center;
-	padding: 1em 1em 2.5em 1em;
-	justify-self: center;
+	height: 5vh;
 
 	transition: .5s ease-in-out;
+}
+.button-text {
+	grid-area: text-area;
+	color: black;
+	opacity: 0;
+	max-height: 4em;
+
+	transition: .3s ease-in-out;
 }
 
 label h3 {
@@ -452,10 +487,42 @@ label h3 {
 	max-width: 50vw;
 }
 .submenu li {
-	white-space: normal;
+	display: flex;
+	align-items: center;
+	padding-left: .5em;
+	height: 2em;
+}
+.submenu h3{
+	font-size: 5vmin;
 }
 li {
 	max-width: 50vw;
+}
+
+/* Galleries */
+.photo-gallery {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	flex-direction: column;
+
+	position: absolute;
+	top: 7vh;
+	left: 0;
+}
+
+.gal-col {
+	flex: 25%;
+	justify-self: center;
+	max-width: 90vw;
+	margin: 0 1em;
+}
+
+.gal-col img {
+	border: solid;
+	padding: .5em;
+	margin: .25em 0;
 }
 }
 
