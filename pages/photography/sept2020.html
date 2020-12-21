@@ -9,6 +9,7 @@
 <title>September 2020 Diary | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,35 +112,28 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="sept20-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-                    <img src="/IMAGES/SEPT 2020/IMG_0116.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0039.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0119.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0091.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0032.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0148.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0100.jpg" alt="">
-				</div>
-				
-				<div class="gal-col" id="col-2">
-                    <img src="/IMAGES/SEPT 2020/IMG_0079.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0106.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0087.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0105.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0073.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0112.jpg" alt="">
-				</div>
-	
-				<div class="gal-col" id="col-3">
-                    <img src="/IMAGES/SEPT 2020/IMG_0125.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0050.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0013.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0041.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0031.jpg" alt="">
-                    <img src="/IMAGES/SEPT 2020/IMG_0095.jpg" alt="">
-				</div>
-			</section>
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0116.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0039.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0119.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0091.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0032.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0148.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0100.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0079.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0106.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0087.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0105.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0073.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0112.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0125.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0050.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0013.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0041.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0031.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0095.jpg" alt=""/></div>
+			  </div>
 		</main>
 </body>
 </html>

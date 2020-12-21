@@ -9,6 +9,7 @@
 <title>Personal Work | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,33 +112,27 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="dr-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-                    <img src="/IMAGES/HOBBY/SUN 4.jpg" alt=""> Sun 4, 2020
-                    <img src="/IMAGES/HOBBY/PEACE NOW-100.jpg" alt="">NOW #1, 2020 <br><small>(Original Hand Illustrator Frank Cieciorka)</small>
-                    <img src="/IMAGES/HOBBY/SIGNS-100.jpg" alt="">Signs, 2020
-                    <img src="/IMAGES/HOBBY/Untitled-1.gif" alt="">
-                    <img src="/IMAGES/HOBBY/HAT-100.jpg" alt="">Mic, 2020 <br><small>(Original Photographer Unknown)</small>
-                    <img src="/IMAGES/HOBBY/COVID 1.jpg" alt="">COVID Graphic #1, 2020
-				</div>
-				
-				<div class="gal-col" id="col-2">
-                    <img src="/IMAGES/HOBBY/SUN 3.jpg" alt="">Sun 3, 2020
-                    <img src="/IMAGES/HOBBY/FLAG-100.jpg" alt="">Panther Flag, 2020 <br><small>(Original Illustrator of Panther Unknown)</small>
-                    <img src="/IMAGES/HOBBY/AFTER SNCC-100.jpg" alt="">Untitled, 2020 <br><small>(Inspired by Danny Lyon Posters for the SNCC)</small>
-                    <img src="/IMAGES/HOBBY/CRASH-100.jpg" alt="">Crash, 2020 <br><small>(Inspired by the 1988 film <em>Akira</em>)</small>
-                    <img src="/IMAGES/HOBBY/GLASS-100.jpg" alt="">Glass, 2020 <br><small>(Original Photographer Unknown)</small>
-                    <img src="/IMAGES/HOBBY/COVID 4.jpg" alt="">COVID Graphic #4, 2020
-				</div>
-	
-				<div class="gal-col" id="col-3">
-                    <img src="/IMAGES/HOBBY/SUN.jpg" alt="">Sun 1, 2020
-                    <img src="/IMAGES/HOBBY/POWER NOW-100.jpg" alt="">NOW #2, 2020 <br><small>(Original Hand Illustrator Artist Unknown)</small>
-                    <img src="/IMAGES/HOBBY/NOW.jpg" alt="">“NOW”, 2020 <br><small>(Inspired by Danny Lyon Posters for the SNCC)</small>
-                    <img src="/IMAGES/HOBBY/SKULL-100.jpg" alt="">Skull #1, 2020 <br><small>(Drawn from a Lamp Design by Nir Chehanowski)</small>
-                    <img src="/IMAGES/HOBBY/COVID 5-100.jpg" alt="">COVID Graphic #5, 2020
-				</div>
-			</section>
+
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/SUN 4.jpg" alt=""> Sun 4, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/PEACE NOW-100.jpg" alt="">NOW #1, 2020 <br><small>(Original Hand Illustrator Frank Cieciorka)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/SIGNS-100.jpg" alt="">Signs, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/Untitled-1.gif" alt=""></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/HAT-100.jpg" alt="">Mic, 2020 <br><small>(Original Photographer Unknown)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/COVID 1.jpg" alt="">COVID Graphic #1, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/SUN 3.jpg" alt="">Sun 3, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/FLAG-100.jpg" alt="">Panther Flag, 2020 <br><small>(Original Illustrator of Panther Unknown)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/AFTER SNCC-100.jpg" alt="">Untitled, 2020 <br><small>(Inspired by Danny Lyon Posters for the SNCC)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/CRASH-100.jpg" alt="">Crash, 2020 <br><small>(Inspired by the 1988 film <em>Akira</em>)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/GLASS-100.jpg" alt="">Glass, 2020 <br><small>(Original Photographer Unknown)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/COVID 4.jpg" alt="">COVID Graphic #4, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/SUN.jpg" alt="">Sun 1, 2020</div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/POWER NOW-100.jpg" alt="">NOW #2, 2020 <br><small>(Original Hand Illustrator Artist Unknown)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/NOW.jpg" alt="">“NOW”, 2020 <br><small>(Inspired by Danny Lyon Posters for the SNCC)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/SKULL-100.jpg" alt="">Skull #1, 2020 <br><small>(Drawn from a Lamp Design by Nir Chehanowski)</small></div>
+				<div class="carousel-cell"><img src="/IMAGES/HOBBY/COVID 5-100.jpg" alt="">COVID Graphic #5, 2020</div>
+			  </div>
 		</main>
 </body>
 </html>

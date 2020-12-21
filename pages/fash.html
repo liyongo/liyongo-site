@@ -9,6 +9,7 @@
 <title>Fashion Illustrations | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,19 +112,12 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="illu-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-                    <img src="/IMAGES/FASHION/AKRIS DRAWING.pdf" alt="">
-				</div>
-				
-				<div class="gal-col" id="col-2">
-                    <img src="/IMAGES/FASHION/BOWLER SHIRT.pdf" alt="">
-				</div>
-	
-				<div class="gal-col" id="col-3">
-                    <img src="/IMAGES/FASHION/VARSITY JACKET.pdf" alt="">
-				</div>
-			</section>
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img style="background: #f5f5f5;" src="/IMAGES/FASHION/AKRIS DRAWING.pdf" alt=""/></div>
+				<div class="carousel-cell"><img style="background: #f5f5f5;" src="/IMAGES/FASHION/BOWLER SHIRT.pdf" alt=""/></div>
+				<div class="carousel-cell"><img style="background: #f5f5f5;" src="/IMAGES/FASHION/VARSITY JACKET.pdf" alt=""/></div>
+			  </div>
 		</main>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>Angels International | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,31 +112,24 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="ai-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-					<img src="/IMAGES/ANGELS INTL/IMG_0306.jpg" alt="Angels Intl. rings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0196.jpg" alt="Angels Intl. necklaces">
-					<img src="/IMAGES/ANGELS INTL/IMG_0167.jpg" alt="Angels Intl. rings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0297.jpg" alt="Angels Intl. earrings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0282.jpg" alt="Angels Intl. rings">
-				</div>
-
-				<div class="gal-col" id="col-2">
-					<img src="/IMAGES/ANGELS INTL/IMG_0295.jpg" alt="Angels Intl. necklace">
-					<img src="/IMAGES/ANGELS INTL/IMG_0256.jpg" alt="Angels Intl. pearl necklace">
-					<img src="/IMAGES/ANGELS INTL/IMG_0299.jpg" alt="Angels Intl. earrings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0262.jpg" alt="Angels Intl. earrings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0201.jpg" alt="Angels Intl. necklace">
-				</div>
-	
-				<div class="gal-col" id="col-3">
-					<img src="/IMAGES/ANGELS INTL/IMG_0242.jpg" alt="Angels Intl. earrings">
-					<img src="/IMAGES/ANGELS INTL/IMG_0321.jpg" alt="Angels Intl. jewelry">
-					<img src="/IMAGES/ANGELS INTL/IMG_0210.jpg" alt="Angels Intl. jewelry">
-					<img src="/IMAGES/ANGELS INTL/IMG_0278.jpg" alt="Angels Intl. necklace">
-					<img src="/IMAGES/ANGELS INTL/IMG_0241.jpg" alt="Angels Intl. necklace">
-				</div>
-			</section>
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0295.jpg" alt="Angels Intl. necklace"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0306.jpg" alt="Angels Intl. rings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0242.jpg" alt="Angels Intl. earrings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0196.jpg" alt="Angels Intl. necklaces"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0256.jpg" alt="Angels Intl. pearl necklace"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0321.jpg" alt="Angels Intl. jewelry"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0167.jpg" alt="Angels Intl. rings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0299.jpg" alt="Angels Intl. earrings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0210.jpg" alt="Angels Intl. jewelry"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0297.jpg" alt="Angels Intl. earrings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0262.jpg" alt="Angels Intl. earrings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0278.jpg" alt="Angels Intl. necklace"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0282.jpg" alt="Angels Intl. rings"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0201.jpg" alt="Angels Intl. necklace"></div>
+				<div class="carousel-cell"><img src="/IMAGES/ANGELS INTL/IMG_0241.jpg" alt="Angels Intl. necklace"></div>
+			  </div>
 		</main>
 </body>
 </html>

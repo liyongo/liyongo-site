@@ -9,6 +9,7 @@
 <title>I Love Old School | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,23 +112,15 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="dr-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/BABY LOV-100.jpg" alt="">
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/BEIGESQUARE.png" alt="">
-				</div>
-				
-				<div class="gal-col" id="col-2">
-
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/THESCENE-100.jpg" alt="">Recreation of <em>The Scene</em>'s logo
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/BUICK DRAWING IMAGE.png" alt="">1975 Buick Electra 225
-				</div>
-	
-				<div class="gal-col" id="col-3">
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/BRNHEART-100.jpg" alt="">
-                    <img src="/IMAGES/I LOVE OLD SCHOOL/BEIGEILOS.png" alt="">
-				</div>
-			</section>
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/BABY LOV-100.jpg" alt=""></div>
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/BEIGESQUARE.png" alt=""></div>
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/THESCENE-100.jpg" alt="">Recreation of <em>The Scene</em>'s logo</div>
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/BUICK DRAWING IMAGE.png" alt="">1975 Buick Electra 225</div>
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/BRNHEART-100.jpg" alt=""></div>
+				<div class="carousel-cell"><img src="/IMAGES/I LOVE OLD SCHOOL/BEIGEILOS.png" alt=""></div>
+			  </div>
 		</main>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>Detroit Rose | Demetrius Liyongo</title>
 <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
 <link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
 
@@ -17,7 +18,7 @@
 	<div class="header">
 		<div class="header-text">
 			<a href="/index.html" alt="Go to Homepage">
-				<h6>Liyongo</h6>
+				Liyongo
 			</a>
 		</div>
 	</div>
@@ -111,22 +112,15 @@
 	</div>
 	<!--- End Header -->
 		<main>
-			<section class="photo-gallery" id="dr-gallery" aria-label="gallery">
-				<div class="gal-col" id="col-1">
-                    <img src="/IMAGES/DETROIT ROSE/SummerSaleStory.gif" alt="">
-                    <img src="/IMAGES/DETROIT ROSE/BODY3.gif" alt="">
-				</div>
-				
-				<div class="gal-col" id="col-2">
-                    <img src="/IMAGES/DETROIT ROSE/DYNAMICDUO.png" alt="">
-                    <img src="/IMAGES/DETROIT ROSE/SummerSaleNews2.gif" alt="">
-				</div>
-	
-				<div class="gal-col" id="col-3">
-                    <img src="/IMAGES/DETROIT ROSE/WHATSINIT.gif" alt="">
-                    <img src="/IMAGES/DETROIT ROSE/BODY1.gif" alt="">
-				</div>
-			</section>
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/SummerSaleStory.gif" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/BODY3.gif" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/DYNAMICDUO.png" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/SummerSaleNews2.gif" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/WHATSINIT.gif" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/DETROIT ROSE/BODY1.gif" alt=""/></div>
+			  </div>
 		</main>
 </body>
 </html>
