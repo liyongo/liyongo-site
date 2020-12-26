@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="This is the site you're looking for.">
-<meta name="keywords" content="demetrius, liyongo, designer, graphic designer, designer, fashion, fashion designer, demetrius few, demetrius few jr.">
+<meta name="keywords" content="demetrius liyongo, liyongo, demetrius few, demetrius few jr.">
 <meta name="robots" content="index, follow">
 <title>Demetrius Liyongo</title>
-<link rel='icon' href='favicon.ico' type='image/x-icon'/>
-<link href="liyongo-site-3.css" rel="stylesheet" type="text/css">
+<link rel='icon' href='/favicon.ico' type='image/x-icon'/>
+<link href="/liyongo-site-3.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/flickity.css" media="screen">
 </head>
 
@@ -17,39 +17,76 @@
 	<!-- Header -->
 	<header>
 		<div class="home-button">
-			<a href="/index.html" alt="Go to Homepage" aria-label="home button">
+			<a href="/index.html" alt="Go to Homepage">
 				Liyongo
 			</a>
 		</div>
-		<div class="cross"></div>
-</header>
+	</div>
+	<div class="main-menu" onclick="void(0)">
+		<input type="checkbox" id="menu">
+		<label for="menu">
+				<div class="cross"></div>
+		</label>
+		<div class="menu-content">
+			<ul>
+				<li>
+					<a href="/pages/vintage/vintage.html" alt="Go to Vintage Collection">
+						<p>Vintage</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="/pages/clients/clients.html" alt="Go to Projects">
+						<p>Projects</p>
+					</a>
+				</li>
+
+				<!-- <li>
+					<a href="/pages/designs.html" alt="Go to Designs">
+						<p>Designs</p>
+					</a>
+				</li> -->
+
+				<li>
+					<a href="/pages/photography/photos.html" alt="Go to Photo Diary">
+						<p>Photo Diary</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="/pages/info.html" alt="Go to Info">
+						<p>Info</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</header>
 	<!--- End Header -->
 		<main>
-			<div class="hello" id="menu">
-				<div class="menu-item" id="fashion">
-					<div class="menu-text" id="f-text">
-						Fashion
-					</div>
-					<div class="menu-img" id="f-img">
-						<img src="/IMAGES/SHOP/FLATS/gold-rain_6621.jpg" alt="">
-					</div>
-				</div>
-				<div class="menu-item" id="digital">
-					<div class="menu-text" id="d-text">
-						Digital
-					</div>
-					<div class="menu-img" id="d-img">
-						<img src="/IMAGES/HOBBY/PEACE NOW-100.jpg" alt="">
-					</div>
-				</div>
-				<div class="menu-item" id="photo">
-					<div class="menu-text" id="p-text">
-						Photo
-					</div>
-					<div class="menu-img" id="p-img">
-						<img src="/IMAGES/ANGELS INTL/IMG_0252.jpg" alt="">
-					</div>
-				</div>
+			<div class="home-box">
+			<script src="/flickity.pkgd.min.js"></script>
+			<div class="main-carousel" data-flickity='{ "autoPlay": true, "cellAlign": "left", "contain": true, "wrapAround": true, "dragThreshold": 1 }' aria-label="carousel">
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0116.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0039.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0119.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0091.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0032.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0148.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0100.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0079.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0106.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0087.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0105.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0073.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0112.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0125.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0050.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0013.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0041.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0031.jpg" alt=""/></div>
+				<div class="carousel-cell"><img src="/IMAGES/SEPT 2020/IMG_0095.jpg" alt=""/></div>
+			  </div>
 			</div>
 		</main>
 </body>

@@ -97,8 +97,8 @@ https://flickity.metafizzy.co
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 50px; }
-.flickity-prev-next-button.next { right: 50px; }
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -155,14 +155,21 @@ https://flickity.metafizzy.co
   .flickity-button {
     display: none;
   }
+  .flickity-enabled {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-40%);
+  }
   }
   
   @media screen and (orientation:landscape)
     and (max-device-width: 812px) {
       .flickity-enabled {
-        top: -3em;
+        top: 50%;
       }
       .flickity-button {
         display: initial;
+        width: 4em;
+        height: 4em;
       }
     }
