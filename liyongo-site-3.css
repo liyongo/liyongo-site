@@ -41,6 +41,10 @@ main{
 	-moz-align-items: center;
 	-ms-align-items: center;
 	align-items: center;
+
+	flex-direction: column;
+
+	height: auto;
 }
 
 div {
@@ -346,12 +350,16 @@ input#leg:checked ~ #leg-but {
 	font-size: 1em;
 }
 iframe {
-	height: 70vh;
-	width: 87.5vw;
+	height: 80vh;
+	width: 80vw;
 	border: solid;
 	border-width: .22em;
 	padding: .5em;
 	align-self: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .hello{
