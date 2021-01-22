@@ -337,6 +337,18 @@ input#leg:checked ~ #leg-but {
 	margin-top: .25em;
 	box-shadow: 0 0 0px .22em #000;
 }
+.vintage-nav {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+	max-width: 10vw;
+	padding-bottom: 2em;
+}
+.vintage-nav a {
+	font-weight: 500;
+}
 .site-section{
 	display: flex;
 	flex-direction: column;
