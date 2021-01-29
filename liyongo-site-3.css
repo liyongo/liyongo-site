@@ -409,9 +409,7 @@ and (max-device-width: 812px) {
 		top: 100%;
 	}
 	/* Galleries */
-	.carousel-cell img {
-		top: 30%;
-		transform: translateY(-30%);
+	.carousel-cell img {;
 		max-height: 80%;
 		max-width: 80vw;
 	}
@@ -432,7 +430,7 @@ and (max-device-width: 812px) {
 		}
 		.carousel-cell img {
 			top: 10%;
-			transform: translate(-50%, -10%);
+			transform: translateY(-10%);
 			max-height: 80%;
 			width: auto;
 		}
