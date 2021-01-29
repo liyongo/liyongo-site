@@ -305,17 +305,21 @@ input#leg:checked ~ #leg-but {
 	width: 100%; /* full width */
 	height: 80vh; /* height of carousel */
 	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
   }
 .carousel-cell img {
-	position: absolute;
-	left: 50%;
-	top: 70%;
-	transform: translate(-50%, -70%);
-	max-height: 90%;
+	max-height: 80%;
 	width: auto;
 	border: solid;
 	border-width: .22em;
 	padding: .5em;
+}
+.carousel-cell p {
+	text-align: center;
+	margin-top: 1em;
 }
 .photo-gallery {
 	display: -ms-flexbox;
@@ -407,7 +411,7 @@ and (max-device-width: 812px) {
 	/* Galleries */
 	.carousel-cell img {
 		top: 30%;
-		transform: translate(-50%, -30%);
+		transform: translateY(-30%);
 		max-height: 80%;
 		max-width: 80vw;
 	}
