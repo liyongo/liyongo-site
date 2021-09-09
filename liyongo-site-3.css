@@ -110,7 +110,7 @@ header{
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	height: 2.5em;
+	height: 2.75em;
 
 	z-index: 98;
 }
@@ -124,12 +124,13 @@ header{
 	font-size: 2em;
 
 	border-bottom: solid;
-	border-bottom-width: .22rem;
+	border-bottom-width: .1rem;
 
 	background: #EEE;
 }
 .home-button a {
 	padding-left: .5em;
+	font-weight: 400;
 }
 /* Main Menu */
 .main-menu{
@@ -146,7 +147,7 @@ header{
 .cross{
 	background-color: #000;
 	width: 1.5em;
-	height: .22em;
+	height: .1em;
 	transform: rotate(90deg);
 	position: absolute;
 
@@ -157,7 +158,7 @@ header{
 	position: fixed;
 	left: 0;
 	width: 1.5em;
-	height: .22em;
+	height: .1em;
 	transform: rotate(90deg);
 }
 .main-menu label {
@@ -193,7 +194,7 @@ input#menu:not(:checked) + label {
 }
 .menu-content {
 	position: fixed;
-	top: 5.22em;
+	top: 5.1em;
 	right: 0;
 	width: auto;
 	pointer-events: none;
@@ -215,9 +216,9 @@ input#menu:not(:checked) + label {
 	display: flex;
 	align-items: center;
 	padding: .2em 1em;
-	margin: -.22em;
+	margin: -.1em;
 	white-space: nowrap;
-	border: .22em solid;
+	border: .1em solid;
 	background: #EEE;
 }
 
@@ -245,7 +246,7 @@ input#menu:not(:checked) + label {
 	height: 40%;
 
 	border: solid;
-	border-width: .22em;
+	border-width: .1em;
 	text-align: center;
 }
 .button-div label {
@@ -322,6 +323,22 @@ p:hover #proj-img {
 	display: none;
 }
 
+/* Shop */
+#shp-tst {
+	width: 90vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#shop-img {
+	width: 50%;
+}
+#smart-button-container {
+	width: 50%;
+}
+
+
 /* Carousels */
 .carousel-cell {
 	width: 100%; /* full width */
@@ -336,7 +353,7 @@ p:hover #proj-img {
 	max-height: 95%;
 	width: auto;
 	border: solid;
-	border-width: .22em;
+	border-width: .1em;
 	padding: .5em;
 }
 .car-cap {
@@ -369,10 +386,10 @@ p:hover #proj-img {
 	height: auto;
 }
 .gal-item p {
-	margin-left: -.22em;
+	margin-left: -.1em;
 }
 .gal-item img{
-	box-shadow: 0 0 0px .22em #000;
+	box-shadow: 0 0 0px .1em #000;
 	width: 100%;
 }
 .vintage-nav {
@@ -393,7 +410,7 @@ iframe {
 	height: 80vh;
 	width: 80vw;
 	border: solid;
-	border-width: .22em;
+	border-width: .1em;
 	padding: .5em;
 }
 
@@ -693,8 +710,8 @@ and (max-device-width: 812px) {
   /* ---- previous/next buttons ---- */
 .flickity-prev-next-button {
 	top: 50%;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	/* vertically center */
 	transform: translateY(-50%);
